@@ -16,7 +16,7 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header"
-        "main   aside"
+        "main aside"
         "footer footer";
     max-width: 1000px;
     margin: 0 auto;
@@ -26,27 +26,33 @@ body {
 
 header {
     grid-area: header;
-    background-color: #63B3ED;
+    background-color: #3C8527;
     color: #FFFFFF;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 40px 20px;
+    gap: 25px;
 }
 
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    border: 3px solid #FFFFFF;
     object-fit: cover;
-    margin-bottom: 15px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header h1 {
-    font-size: 36px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 39px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     margin: 0 0 5px 0;
 }
 
@@ -54,7 +60,7 @@ header p {
     margin: 0;
 }
 
-/* ---------- Main content ---------- */
+/* ---------- Main Content ---------- */
 
 main {
     grid-area: main;
@@ -66,13 +72,13 @@ article {
 }
 
 article h2 {
-    font-size: 32px;
-    color: #48BB78;
+    font-size: 34px;
+    color: #28651C;
     margin-bottom: 5px;
 }
 
 .post-meta {
-    color: #718096;
+    color: #667267;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -111,17 +117,17 @@ aside section {
 }
 
 aside h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     margin-bottom: 10px;
 }
 
 .social-media h3,
 .archives h3 {
-    color: #48BB78;
+    color: #28651C;
 }
 
 .about h3 {
-    color: #000000;
+    color: #333322;
 }
 
 .about {
@@ -141,7 +147,7 @@ aside li {
 
 .social-media a,
 .archives a {
-    color: #4299E1;
+    color: #2879B8;
     text-decoration: none;
 }
 
@@ -154,7 +160,7 @@ aside li {
 
 footer {
     grid-area: footer;
-    background-color: #2C5282;
+    background-color: #28651C;
     color: #FFFFFF;
     text-align: center;
     padding: 15px;
